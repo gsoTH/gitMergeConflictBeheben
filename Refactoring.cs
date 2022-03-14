@@ -18,19 +18,6 @@ public class Program
 		
 	}
 
-    static int[] ZweiZahlenEingeben()
-    {
-        int[] werte = new int[2];
-        Console.WriteLine("Bitte geben Sie eine Zahl ein:");
-		string eingabe = Console.ReadLine();
-		werte[0] = Convert.ToInt32(eingabe);
-		
-		Console.WriteLine("Bitte geben Sie noch eine Zahl ein:");
-		eingabe = Console.ReadLine();
-		werte[1] = Convert.ToInt32(eingabe);
-        return werte;
-    }
-
 	static bool Test(int a, int b)
 	{
 		if(a>b)
@@ -45,4 +32,17 @@ public class Program
 		
 		return false;
 	}
+}
+
+static int[] ZweiZahlenEingeben()
+{
+	int[] werte = new int[2];
+	Console.WriteLine("Bitte geben Sie eine Zahl ein:");
+	string eingabe = Console.ReadLine();
+	werte[0] = Convert.ToInt32(eingabe);
+	
+	Console.WriteLine("Bitte geben Sie noch eine Zahl ein:");
+	eingabe = Console.ReadLine();
+	werte[1] = Convert.ToInt32(eingabe);
+	return werte;
 }
