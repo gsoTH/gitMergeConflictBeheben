@@ -13,10 +13,12 @@ public class Program
 		int wert2 = Convert.ToInt32(eingabe);
 		
 		bool istGroesser = Test(wert1, wert2);
+		
 		if(istGroesser == true)
 		{
 			Console.WriteLine("Die erste Zahl ist größer.");
 		}
+
 		if(istGroesser == false)
 		{
 			Console.WriteLine("Die zweite Zahl ist größer.");
