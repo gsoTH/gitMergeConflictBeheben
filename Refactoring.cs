@@ -31,11 +31,6 @@ public class Program
 			return true;	
 		}
 		
-		if(b<a)
-		{	
-			return false;
-		}
-		
 		return false;
 	}
 }
