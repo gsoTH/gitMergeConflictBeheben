@@ -16,12 +16,9 @@ public class Program
 		if(istGroesser == true)
 		{
 			Console.WriteLine("Die erste Zahl ist größer.");
-		} 
-        else 
-        {
+		} else  {
 			Console.WriteLine("Die zweite Zahl ist größer.");
 		}
-		
 	}
 	
 	static bool Test(int a, int b)
