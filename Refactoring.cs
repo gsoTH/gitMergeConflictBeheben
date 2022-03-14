@@ -12,7 +12,7 @@ public class Program
 		eingabe = Console.ReadLine();
 		int wert2 = Convert.ToInt32(eingabe);
 		
-		bool istGroesser = Test(wert1, wert2);
+		bool istGroesser = ErsterWertIstGroesser(wert1, wert2);
 		if(istGroesser == true)
 		{
 			Console.WriteLine("Die erste Zahl ist größer.");
@@ -24,7 +24,7 @@ public class Program
 		
 	}
 	
-	static bool Test(int a, int b)
+	static bool ErsterWertIstGroesser(int a, int b)
 	{
 		if(a>b)
 		{
