@@ -16,9 +16,9 @@ public class Program
 		if(istGroesser == true)
 		{
 			Console.WriteLine("Die erste Zahl ist größer.");
-		}
-		if(istGroesser == false)
-		{
+		} 
+        else 
+        {
 			Console.WriteLine("Die zweite Zahl ist größer.");
 		}
 		
