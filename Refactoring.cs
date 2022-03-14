@@ -4,15 +4,9 @@ public class Program
 {
 	public static void Main()
 	{
-		Console.WriteLine("Bitte geben Sie eine Zahl ein:");
-		string eingabe = Console.ReadLine();
-		int wert1 = Convert.ToInt32(eingabe);
+		int[] eingabe = ZweiZahlenEingeben();
 		
-		Console.WriteLine("Bitte geben Sie noch eine Zahl ein:");
-		eingabe = Console.ReadLine();
-		int wert2 = Convert.ToInt32(eingabe);
-		
-		bool istGroesser = Test(wert1, wert2);
+		bool istGroesser = Test(eingabe[0], eingabe[1]);
 		if(istGroesser == true)
 		{
 			Console.WriteLine("Die erste Zahl ist größer.");
@@ -23,7 +17,20 @@ public class Program
 		}
 		
 	}
-	
+
+    static int[] ZweiZahlenEingeben()
+    {
+        int[] werte = new int[2];
+        Console.WriteLine("Bitte geben Sie eine Zahl ein:");
+		string eingabe = Console.ReadLine();
+		werte[0] = Convert.ToInt32(eingabe);
+		
+		Console.WriteLine("Bitte geben Sie noch eine Zahl ein:");
+		eingabe = Console.ReadLine();
+		werte[1] = Convert.ToInt32(eingabe);
+        return werte;
+    }
+
 	static bool Test(int a, int b)
 	{
 		if(a>b)
