@@ -4,5 +4,4 @@ In diesem Repository sind mehrere branches vorhanden, die jeweils in den Master 
 
 ## Ziele :dart:
 - Mergekonflikte auflösen
-- Merge aus mehreren Branches gleichzeitig
 
